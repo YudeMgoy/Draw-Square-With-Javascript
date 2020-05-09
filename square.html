@@ -1,0 +1,22 @@
+<script>
+    createSquare(10);
+    function createSquare(sisi){
+        var str = '';
+        for(i=0;i<sisi;i++){
+            for(a=0;a<sisi;a++){
+                if(a == 0){
+                    str += "*";
+                }else if(a == sisi-1){
+                    str += "*\n";
+                }
+                else if(i==0 || i==(sisi-1)){
+                    str += "*";      
+                }else{
+                    str += " ";
+                }
+            }
+        }        
+
+        console.log(str);
+    }
+</script>
